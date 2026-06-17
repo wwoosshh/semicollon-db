@@ -1,0 +1,13 @@
+{
+  "name": "semicolon-db",
+  "private": true,
+  "scripts": {
+    "new": "dbmate new",
+    "up": "dbmate up",
+    "down": "dbmate down",
+    "status": "dbmate status"
+  },
+  "devDependencies": {
+    "dbmate": "^2.21.0"
+  }
+}
