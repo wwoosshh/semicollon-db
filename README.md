@@ -10,7 +10,8 @@
 - ERD / 데이터 모델 문서
 
 ## 호스팅
-- Railway Postgres (관리형)
+- **Supabase** (관리형 Postgres로만 사용 — Auth/Realtime/Storage 등 미사용)
+- 연결: Session pooler 또는 Direct connection 문자열 사용 (Transaction pooler 6543은 `pg` prepared statement와 충돌하므로 회피), SSL 필수
 
 ## 소비처
 - `semicolon-backend` 가 이 스키마에 연결하고, `kysely-codegen` 으로 TypeScript 타입을 생성해 사용.
